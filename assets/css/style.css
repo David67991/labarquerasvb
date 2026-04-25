@@ -993,7 +993,7 @@ textarea.is-invalid {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 20000;
   background-color: var(--body-bg);
 }
 .preloader .vs-btn {
@@ -9732,6 +9732,11 @@ a .logo-tel {
   border-radius: 14px !important;
 }
 
+.header-layout3 .vs-btn.platforms-btn:hover,
+.header-layout3 .vs-btn.platforms-btn:focus-visible {
+  color: #000000 !important;
+}
+
 .header-layout3 .vs-btn.platforms-btn:before,
 .header-layout3 .vs-btn.platforms-btn:after,
 .header-layout3 .vs-btn.platforms-btn:hover:before,
@@ -9790,7 +9795,7 @@ a .logo-tel {
 
 .header-layout3 .platforms-menu .sub-menu li a:hover,
 .header-layout3 .platforms-menu .sub-menu li a:focus-visible {
-  color: var(--theme-color);
+  color: #000000;
 }
 
 .header-layout3 .platforms-menu .sub-menu li a:before {
@@ -9904,6 +9909,13 @@ a .logo-tel {
     display: inline-flex;
     align-items: center;
   }
+
+  .header-layout3 .vs-btn.platforms-btn:hover,
+  .header-layout3 .vs-btn.platforms-btn:focus-visible {
+    background-color: #fff967 !important;
+    border-color: #fff967 !important;
+    color: #000000 !important;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -9991,8 +10003,8 @@ a .logo-tel {
 /* School chatbot (positioned next to WhatsApp button) */
 .schoolbot-float {
   position: fixed;
-  right: 220px;
-  bottom: 25px;
+  right: 25px;
+  bottom: 90px;
   z-index: 9998;
   border: 0;
   border-radius: 999px;
@@ -10007,7 +10019,7 @@ a .logo-tel {
   gap: 0;
   line-height: 1;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .schoolbot-float:hover {

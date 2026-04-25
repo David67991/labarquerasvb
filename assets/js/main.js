@@ -732,49 +732,101 @@
 
   /*---------- 20. School Chatbot ----------*/
   function initSchoolChatbot() {
+    var existingButton = document.querySelector(".schoolbot-float");
+    if (existingButton && existingButton.dataset.chatbotReady === "1") {
+      return true;
+    }
+
     var whatsappButtons = document.querySelectorAll(".whatsapp-float");
-    if (!whatsappButtons.length || document.querySelector(".schoolbot-float")) {
-      return;
+    if (!whatsappButtons.length) {
+      return false;
     }
 
     var whatsappBtn = whatsappButtons[whatsappButtons.length - 1];
 
-    var chatbotButton = document.createElement("button");
-    chatbotButton.type = "button";
-    chatbotButton.className = "schoolbot-float";
-    chatbotButton.setAttribute("aria-label", "Abrir asistente virtual");
-    chatbotButton.innerHTML =
-      '<span class="schoolbot-avatar-wrap"><img class="schoolbot-avatar" alt="VicentinoBot" /></span>' +
-      '<span class="schoolbot-badge">Hola soy VicentinoBot</span>';
+    var chatbotButton = existingButton;
+    if (!chatbotButton) {
+      chatbotButton = document.createElement("button");
+      chatbotButton.type = "button";
+      chatbotButton.className = "schoolbot-float";
+      chatbotButton.setAttribute("aria-label", "Abrir asistente virtual");
+      chatbotButton.innerHTML =
+        '<span class="schoolbot-avatar-wrap"><img class="schoolbot-avatar" src="/assets/images/chatbot_icon_256.png" loading="eager" decoding="sync" fetchpriority="high" alt="VicentinoBot" /></span>' +
+        '<span class="schoolbot-badge">Hola soy VicentinoBot</span>';
+      document.body.appendChild(chatbotButton);
+    } else {
+      chatbotButton.type = "button";
+      chatbotButton.setAttribute("aria-label", "Abrir asistente virtual");
+      if (!chatbotButton.querySelector(".schoolbot-avatar-wrap")) {
+        chatbotButton.innerHTML =
+          '<span class="schoolbot-avatar-wrap"><img class="schoolbot-avatar" src="/assets/images/chatbot_icon_256.png" loading="eager" decoding="sync" fetchpriority="high" alt="VicentinoBot" /></span>' +
+          '<span class="schoolbot-badge">Hola soy VicentinoBot</span>';
+      }
+    }
 
     var avatarEl = chatbotButton.querySelector(".schoolbot-avatar");
     if (avatarEl) {
-      avatarEl.src = "assets/images/chatbot_icon_256.png";
-      avatarEl.addEventListener("error", function () {
-        if (avatarEl.dataset.fallbackTried === "1") {
+      avatarEl.setAttribute("loading", "eager");
+      avatarEl.setAttribute("decoding", "sync");
+      avatarEl.setAttribute("fetchpriority", "high");
+
+      var avatarSources = [];
+      function pushAvatarSource(src) {
+        if (!src || avatarSources.indexOf(src) >= 0) return;
+        avatarSources.push(src);
+      }
+
+      var mainScriptEl = null;
+      for (var si = document.scripts.length - 1; si >= 0; si--) {
+        var scriptSrcAttr = document.scripts[si].getAttribute("src") || "";
+        if (/assets\/js\/main\.js$/i.test(scriptSrcAttr)) {
+          mainScriptEl = document.scripts[si];
+          break;
+        }
+      }
+
+      pushAvatarSource("/assets/images/chatbot_icon_256.png");
+
+      if (mainScriptEl && mainScriptEl.src) {
+        try {
+          pushAvatarSource(new URL("../images/chatbot_icon_256.png", mainScriptEl.src).href);
+        } catch (e) {}
+      }
+
+      var currentAvatarSrc = (avatarEl.getAttribute("src") || "").trim();
+      pushAvatarSource(currentAvatarSrc);
+      pushAvatarSource("assets/images/chatbot_icon_256.png");
+      pushAvatarSource("../assets/images/chatbot_icon_256.png");
+
+      var avatarSourceIndex = 0;
+      function loadNextAvatarSource() {
+        if (avatarSourceIndex >= avatarSources.length) {
           return;
         }
-        avatarEl.dataset.fallbackTried = "1";
-        avatarEl.src = "../assets/images/chatbot_icon_256.png";
-      });
+        avatarEl.src = avatarSources[avatarSourceIndex++];
+      }
+
+      avatarEl.addEventListener("error", loadNextAvatarSource);
+      loadNextAvatarSource();
     }
 
-    var chatbotPanel = document.createElement("section");
-    chatbotPanel.className = "schoolbot-panel";
-    chatbotPanel.setAttribute("aria-hidden", "true");
-    chatbotPanel.innerHTML =
-      '<div class="schoolbot-header">' +
-      '<strong>Asistente del colegio</strong>' +
-      '<button type="button" class="schoolbot-close" aria-label="Cerrar asistente">&times;</button>' +
-      "</div>" +
-      '<div class="schoolbot-messages"></div>' +
-      '<form class="schoolbot-form">' +
-      '<input type="text" class="schoolbot-input" placeholder="Escribe tu pregunta..." autocomplete="off" />' +
-      '<button type="submit" class="schoolbot-send">Enviar</button>' +
-      "</form>";
-
-    document.body.appendChild(chatbotButton);
-    document.body.appendChild(chatbotPanel);
+    var chatbotPanel = document.querySelector(".schoolbot-panel");
+    if (!chatbotPanel) {
+      chatbotPanel = document.createElement("section");
+      chatbotPanel.className = "schoolbot-panel";
+      chatbotPanel.setAttribute("aria-hidden", "true");
+      chatbotPanel.innerHTML =
+        '<div class="schoolbot-header">' +
+        '<strong>Asistente del colegio</strong>' +
+        '<button type="button" class="schoolbot-close" aria-label="Cerrar asistente">&times;</button>' +
+        "</div>" +
+        '<div class="schoolbot-messages"></div>' +
+        '<form class="schoolbot-form">' +
+        '<input type="text" class="schoolbot-input" placeholder="Escribe tu pregunta..." autocomplete="off" />' +
+        '<button type="submit" class="schoolbot-send">Enviar</button>' +
+        "</form>";
+      document.body.appendChild(chatbotPanel);
+    }
 
     var messagesEl = chatbotPanel.querySelector(".schoolbot-messages");
     var formEl = chatbotPanel.querySelector(".schoolbot-form");
@@ -2931,14 +2983,43 @@
     });
 
     window.addEventListener("resize", updatePosition);
+    chatbotButton.dataset.chatbotReady = "1";
+    return true;
   }
 
+  var schoolbotInitObserver = null;
+
   function bootSchoolChatbot() {
-    initSchoolChatbot();
-    if (!document.querySelector(".schoolbot-float")) {
-      setTimeout(initSchoolChatbot, 180);
-      setTimeout(initSchoolChatbot, 900);
+    if (initSchoolChatbot()) {
+      if (schoolbotInitObserver) {
+        schoolbotInitObserver.disconnect();
+        schoolbotInitObserver = null;
+      }
+      return;
     }
+
+    setTimeout(initSchoolChatbot, 0);
+    setTimeout(initSchoolChatbot, 60);
+
+    if (!window.MutationObserver || schoolbotInitObserver) {
+      return;
+    }
+
+    var observeTarget = document.body || document.documentElement;
+    schoolbotInitObserver = new MutationObserver(function () {
+      if (initSchoolChatbot()) {
+        schoolbotInitObserver.disconnect();
+        schoolbotInitObserver = null;
+      }
+    });
+
+    schoolbotInitObserver.observe(observeTarget, { childList: true, subtree: true });
+
+    setTimeout(function () {
+      if (!schoolbotInitObserver) return;
+      schoolbotInitObserver.disconnect();
+      schoolbotInitObserver = null;
+    }, 4000);
   }
 
   bootSchoolChatbot();
