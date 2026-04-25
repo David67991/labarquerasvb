@@ -9959,7 +9959,8 @@ a .logo-tel {
     align-items: center;
   }
 
-  .header-layout3 .logo-phone {
+  .header-layout3 .logo-phone,
+  .header-layout3 .logo-tel {
     display: block;
     position: absolute;
     top: 50%;
