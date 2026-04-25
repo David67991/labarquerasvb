@@ -9942,6 +9942,39 @@ a .logo-tel {
   border-color: #001cb9;
 }
 
+/* Mobile header polish: remove white gap and present logo cleanly */
+@media (max-width: 1024px) {
+  .header-layout3.vs-header {
+    height: auto !important;
+    background-color: transparent !important;
+  }
+
+  .header-layout3 .menu-area .row > .col-auto.col-lg.text-center {
+    position: relative;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-layout3 .logo-phone {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    animation: none;
+  }
+
+  .header-layout3 .menu-area .vs-menu-toggle.d-lg-none {
+    position: relative;
+    z-index: 3;
+  }
+}
+
 /* Hero image menu requested colors (only this section) */
 .vs-hero-carousel .ls-html-layer .vs-btn,
 .vs-hero-carousel .ls-html-layer .vs-btn:hover {
