@@ -2836,14 +2836,16 @@
       var rect = whatsappBtn.getBoundingClientRect();
       var whatsappBottomGap = Math.max(10, window.innerHeight - rect.bottom);
       var whatsappRightGap = Math.max(10, window.innerWidth - rect.right);
-      var buttonWidth = chatbotButton.offsetWidth || 120;
-      var desiredRight = whatsappRightGap + rect.width + 10;
-      var maxRight = Math.max(12, window.innerWidth - buttonWidth - 12);
-      var chatbotRight = Math.min(desiredRight, maxRight);
+      var botWidth = chatbotButton.offsetWidth || 56;
+      var verticalGap = 10;
+      var chatbotBottom = whatsappBottomGap + rect.height + verticalGap;
+      var alignedRight = whatsappRightGap + (rect.width - botWidth) / 2;
+      var maxRight = Math.max(12, window.innerWidth - botWidth - 12);
+      var chatbotRight = Math.min(maxRight, Math.max(12, alignedRight));
       var panelRight = Math.max(12, window.innerWidth - rect.right);
       var panelBottom = Math.max(95, window.innerHeight - rect.top + 12);
 
-      chatbotButton.style.bottom = whatsappBottomGap + "px";
+      chatbotButton.style.bottom = chatbotBottom + "px";
       chatbotButton.style.right = chatbotRight + "px";
       chatbotPanel.style.right = panelRight + "px";
       chatbotPanel.style.bottom = panelBottom + "px";

@@ -1342,6 +1342,7 @@ textarea.is-invalid {
 }
 
 .scrollToTop {
+  display: none !important;
   position: fixed;
   right: 60px;
   bottom: 500px;
@@ -9093,8 +9094,8 @@ span.select2-selection.select2-selection--single:focus {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
+  gap: 0;
+  padding: 10px 14px;
   border-radius: 40px;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -9112,6 +9113,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .whatsapp-text {
+  display: none;
   font-size: 16px;
 }
 
@@ -9816,6 +9818,104 @@ a .logo-tel {
   color: #fff967 !important;
 }
 
+/* ==============================================
+   Menu Layout3 - Modern bar style (reference-like)
+   Keeps current links and behavior, only visual changes
+=================================================*/
+.header-layout3 .header-top {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .header-layout3 .menu-area,
+  .header-layout3 .sticky-active.menu-area,
+  .header-layout3 .will-sticky .sticky-active {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto -55px auto;
+    border-radius: 0;
+    background-color: #001cb9;
+  }
+
+  .header-layout3 .menu-area > .container,
+  .header-layout3 .sticky-active.menu-area > .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 14px;
+  }
+
+  .header-layout3 .menu-area .row {
+    min-height: 84px;
+  }
+
+  .header-layout3 .main-menu > ul {
+    display: flex;
+    align-items: stretch;
+    white-space: nowrap;
+  }
+
+  .header-layout3 .main-menu > ul > li {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+  }
+
+  .header-layout3 .main-menu.menu-style3 > ul > li > a {
+    padding: 31px 0;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .header-layout3 .main-menu > ul > li.menu-logo-item {
+    margin: 0 22px 0 0;
+    padding: 0 22px;
+    background-color: #ffffff;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .header-layout3 .main-menu > ul > li.menu-logo-item > .header-logo {
+    max-width: 70px;
+    padding: 0;
+  }
+
+  .header-layout3 .header-icons {
+    margin-left: 10px;
+  }
+
+  .header-layout3 .header-icons .simple-icon.style2 {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .header-layout3 .vs-btn.platforms-btn,
+  .header-layout3 .vs-btn.platforms-btn:hover,
+  .header-layout3 .vs-btn.platforms-btn:focus-visible {
+    background-color: #0d2a93 !important;
+    border: 1px solid rgba(255, 249, 103, 0.38) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    min-height: 56px;
+    padding: 0 24px !important;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .header-layout3 .main-menu > ul > li {
+    margin: 0 12px;
+  }
+
+  .header-layout3 .main-menu.menu-style3 > ul > li > a {
+    font-size: 16px;
+  }
+}
+
 /* Keep legacy custom hovers on institutional blue */
 .btn-imagen:hover,
 .whatsapp-float:hover {
@@ -9904,7 +10004,7 @@ a .logo-tel {
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
   line-height: 1;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -9938,6 +10038,7 @@ a .logo-tel {
 }
 
 .schoolbot-badge {
+  display: none;
   background: #ffffff;
   color: #001cb9;
   font-weight: 700;
