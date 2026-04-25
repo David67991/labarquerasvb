@@ -1,0 +1,9 @@
+{
+  "name": "svb-chatbot-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Servidor local para chatbot inteligente del sitio web",
+  "scripts": {
+    "start": "node chatbot-server.js"
+  }
+}
