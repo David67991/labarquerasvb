@@ -9951,6 +9951,9 @@ a .logo-tel {
 
   .header-layout3 .menu-area .row > .col-auto.col-lg.text-center {
     position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
     min-height: 72px;
     display: flex;
     align-items: center;
