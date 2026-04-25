@@ -10083,6 +10083,31 @@ a .logo-tel {
   }
 }
 
+/* TikTok fallback icon for Font Awesome versions without fa-tiktok glyph */
+.fa-tiktok {
+  line-height: 1;
+}
+
+.fa-tiktok:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("../images/icon/tiktok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+  filter: none;
+  transition: filter 0.2s ease;
+}
+
+.footer-social a:hover .fa-tiktok:before,
+.footer-social a.active .fa-tiktok:before,
+.vs-social a:hover .fa-tiktok:before {
+  filter: brightness(0) invert(1);
+}
+
 /* Footer video background */
 .footer-wrapper.footer-has-video {
   position: relative;
