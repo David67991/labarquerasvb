@@ -2974,7 +2974,7 @@ a.text-theme:hover,
   right: 0;
   left: 0;
   background-color: var(--white-color);
-  transition: all ease 0.8s;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
 }
 .will-sticky .sticky-active.active {
@@ -9821,6 +9821,13 @@ a .logo-tel {
 .footer-widget.widget_nav_menu .menu a:hover,
 .footer-widget.widget_nav_menu .menu a:focus-visible {
   color: #fff967 !important;
+}
+
+/* Keep header menu visible while scrolling on home (direct menu-area) */
+.header-layout3 > .menu-area {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
 }
 
 /* ==============================================

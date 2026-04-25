@@ -137,25 +137,24 @@
   var scrollToTopBtn = ".scrollToTop";
 
   function stickyMenu($targetMenu, $toggleClass, $parentClass) {
+    if (!$targetMenu.length) return;
     var st = $(window).scrollTop();
-    var height = $targetMenu.css("height");
-    $targetMenu.parent().css("min-height", height);
-    if ($(window).scrollTop() > 800) {
-      $targetMenu.parent().addClass($parentClass);
+    var height = $targetMenu.outerHeight();
+    var $parent = $targetMenu.parent();
 
-      if (st > lastScrollTop) {
-        $targetMenu.removeClass($toggleClass);
-      } else {
-        $targetMenu.addClass($toggleClass);
-      }
-    } else {
-      $targetMenu.parent().css("min-height", "").removeClass($parentClass);
-      $targetMenu.removeClass($toggleClass);
+    if (height) {
+      $parent.css("min-height", height + "px");
     }
+
+    $parent.addClass($parentClass);
+    $targetMenu.addClass($toggleClass);
     lastScrollTop = st;
   }
-  $(window).on("scroll", function () {
+  stickyMenu($(".sticky-active"), "active", "will-sticky");
+  $(window).on("resize", function () {
     stickyMenu($(".sticky-active"), "active", "will-sticky");
+  });
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass("show");
     } else {
