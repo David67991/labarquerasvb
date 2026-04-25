@@ -10082,3 +10082,40 @@ a .logo-tel {
     width: min(95vw, 360px);
   }
 }
+
+/* Footer video background */
+.footer-wrapper.footer-has-video {
+  position: relative;
+  overflow: hidden;
+  background-color: #001cb9;
+}
+
+.footer-wrapper.footer-has-video .footer-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.footer-wrapper.footer-has-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 18, 120, 0.62);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-wrapper.footer-has-video > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  .footer-wrapper.footer-has-video::before {
+    background: rgba(0, 18, 120, 0.7);
+  }
+}
