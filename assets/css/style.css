@@ -2958,7 +2958,7 @@ a.text-theme:hover,
 /*------------------- 4.2. Header  -------------------*/
 .vs-header {
   position: relative;
-  z-index: 41;
+  z-index: 1100;
 }
 
 .header-logo {
@@ -2973,6 +2973,7 @@ a.text-theme:hover,
   top: -100%;
   right: 0;
   left: 0;
+  z-index: 1100;
   background-color: var(--white-color);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);

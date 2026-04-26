@@ -1,0 +1,1139 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Colegio Excelencia San Vicente de la Barquera - Descargas</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Colegio Excelencia San Vicente de la Barquera: educacion integral, cultura de exito, innovacion pedagogica y formacion en valores en Huánuco.">
+    <meta name="keywords" content="Colegio Excelencia San Vicente de la Barquera, Huánuco, admision, inicial, primaria, secundaria, cultura de exito, ecointegral.">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon2.ico in the root directory -->
+    <link rel="shortcut icon" href="../assets/images/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favicon2.ico" type="image/x-icon">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Jost:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <!-- Layerslider -->
+    <link rel="stylesheet" href="../assets/css/layerslider.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="../assets/css/slick.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .descargas-wrap .sec-title {
+            margin-bottom: 10px;
+        }
+        .descargas-note {
+            margin: 0 auto 22px auto;
+            max-width: 820px;
+            color: #4a4a4a;
+        }
+        .descargas-block {
+            background: #f6f8ff;
+            border: 1px solid #d7e1ff;
+            border-radius: 18px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .descargas-block h3 {
+            margin-bottom: 16px;
+            color: #001cb9;
+        }
+        .descargas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 16px;
+        }
+        .download-card {
+            background: #ffffff;
+            border: 1px solid #e6ebff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 28, 185, 0.08);
+        }
+        .download-thumb {
+            display: block;
+            background: #edf2ff;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+        .download-thumb.preview-trigger {
+            width: 100%;
+            border: none;
+            padding: 0;
+            cursor: zoom-in;
+            text-align: left;
+        }
+        .download-thumb.preview-trigger:focus-visible {
+            outline: 2px solid #001cb9;
+            outline-offset: -2px;
+        }
+        .download-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .download-body {
+            padding: 12px;
+        }
+        .download-title {
+            font-size: 15px;
+            line-height: 1.35;
+            min-height: 40px;
+            margin: 0 0 10px 0;
+            color: #1d1d1d;
+            font-weight: 700;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #001cb9;
+            color: #fff;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background: #fce045;
+            color: #000;
+        }
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 14px;
+        }
+        .palette-item {
+            background: #fff;
+            border: 1px solid #e6ebff;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .palette-swatch {
+            height: 74px;
+            border-bottom: 1px solid #e6ebff;
+        }
+        .palette-body {
+            padding: 10px 12px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #2c2c2c;
+        }
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 14px;
+        }
+        .audio-card {
+            background: #fff;
+            border: 1px solid #e6ebff;
+            border-radius: 12px;
+            padding: 14px;
+        }
+        .audio-card h4 {
+            margin: 0 0 6px 0;
+            font-size: 20px;
+            color: #001cb9;
+        }
+        .audio-card p {
+            margin: 0 0 10px 0;
+            font-size: 13px;
+            color: #565656;
+        }
+        .audio-card audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .image-preview-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 18, 55, 0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            z-index: 10030;
+        }
+        .image-preview-modal.is-open {
+            display: flex;
+        }
+        .image-preview-dialog {
+            width: min(900px, 96vw);
+            max-height: 92vh;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
+            border: 1px solid #d7e1ff;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-preview-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 14px;
+            border-bottom: 1px solid #e6ebff;
+            background: #f7f9ff;
+        }
+        .image-preview-title {
+            margin: 0;
+            color: #001cb9;
+            font-size: 18px;
+            line-height: 1.25;
+        }
+        .image-preview-close {
+            width: 36px;
+            height: 36px;
+            border: none;
+            border-radius: 50%;
+            background: #001cb9;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-preview-close:hover {
+            background: #fce045;
+            color: #000;
+        }
+        .image-preview-stage {
+            background: #edf2ff;
+            padding: 12px;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-preview-stage img {
+            max-width: 100%;
+            max-height: 68vh;
+            object-fit: contain;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        .image-preview-actions {
+            padding: 12px 14px;
+            border-top: 1px solid #e6ebff;
+            display: flex;
+            justify-content: flex-end;
+            background: #fff;
+        }
+        @media (max-width: 575px) {
+            .image-preview-title {
+                font-size: 16px;
+            }
+            .image-preview-close {
+                width: 32px;
+                height: 32px;
+            }
+            .image-preview-stage img {
+                max-height: 60vh;
+            }
+        }
+        .manual-viewer {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .manual-window {
+            background: #ffffff;
+            border: 1px solid #e6ebff;
+            border-radius: 14px;
+            padding: 14px;
+            box-shadow: 0 6px 18px rgba(0, 28, 185, 0.08);
+        }
+        .manual-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .manual-current-title {
+            margin: 0;
+            font-size: 18px;
+            color: #001cb9;
+        }
+        .manual-head-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .manual-counter {
+            font-size: 13px;
+            font-weight: 700;
+            color: #5c5c5c;
+        }
+        .manual-stage {
+            position: relative;
+            background: #edf2ff;
+            border-radius: 12px;
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 56px;
+        }
+        .manual-stage img {
+            max-width: 100%;
+            max-height: 55vh;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        .manual-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 38px;
+            height: 38px;
+            border: none;
+            border-radius: 50%;
+            background: #001cb9;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .manual-nav:hover {
+            background: #fce045;
+            color: #000;
+        }
+        .manual-nav.prev {
+            left: 10px;
+        }
+        .manual-nav.next {
+            right: 10px;
+        }
+        .manual-thumbs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .manual-thumb-item {
+            background: #ffffff;
+            border: 1px solid #e6ebff;
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .manual-thumb {
+            background: #f8faff;
+            border: 1px solid #d7e1ff;
+            border-radius: 8px;
+            padding: 6px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .manual-thumb img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+        .manual-thumb span {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+        .manual-thumb.is-active {
+            border-color: #001cb9;
+            box-shadow: 0 0 0 2px rgba(0, 28, 185, 0.18);
+        }
+        .manual-thumb-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 700;
+            color: #001cb9;
+            text-decoration: none;
+            border: 1px solid #d7e1ff;
+            border-radius: 999px;
+            padding: 5px 8px;
+            background: #ffffff;
+        }
+        .manual-thumb-download:hover {
+            background: #fce045;
+            color: #000;
+            border-color: #fce045;
+        }
+        @media (max-width: 767px) {
+            .manual-stage {
+                padding: 10px 42px;
+                min-height: 240px;
+            }
+            .manual-nav {
+                width: 32px;
+                height: 32px;
+            }
+            .manual-current-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <div class="preloader-inner">
+            <div class="loader"></div>
+        </div>
+    </div><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="../index.html"><img src="../assets/images/logo4.png" alt="Kiddino"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li>
+                        <a href="#">Quiénes somos</a>
+                        <ul class="sub-menu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="myv.html"class="no-transform">Misión y visión</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <li class="vs-item-has-children">
+                            <a href="#">Propuesta Educativa</a>
+                            <ul>
+                                <li><a href="perfil.html">Perfil Estudiante Vicentino</a></li>
+                                <a href="#">Niveles Educativos</a>
+                                    <ul>
+                                        <li><a href="inicial.html">Inicial</a></li>
+                                        <li><a href="primaria.html">Primaria</a></li>
+                                        <li><a href="secundaria.html">Secundaria</a></li>
+                                    </ul>
+                                <li><a href="departamento.html">Departamento Psicológico</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Vida Estudiantil</a>
+                        <ul>
+                            <a href="#">Actividades</a>
+                            <ul>
+                                <li><a href="olimpiadas.html">Olimpiadas Vicentinas</a></li>
+                                <li><a href="taller.html">Taller de Ajedrez</a></li>
+                            </ul>
+                        <a href="#">Eventos</a>
+                            <ul>
+                                <li><a href="florales.html">Juegos Flores Vicentinos</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <li class="vs-item-has-children">
+                            <a href="#">Admisión</a>
+                            <ul>
+                                <a href="javascript:void(0)" aria-disabled="true" onclick="return false;">Costo e Inversión</a>
+                                    
+                                <li><a href="javascript:void(0)" aria-disabled="true" onclick="return false;">Solicitar Vacante</a></li>
+                                <li><a href="documentos.html">Documentos</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                     <li>
+                        <a href="descargas.html">Descargas</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block  ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="widget-about">
+                    <div class="footer-logo"><img src="../assets/images/logo4.png" alt="Kiddino"></div>
+                    <p class="mb-0 service-text">Bienvenidos al Colegio Excelencia San Vicente de la Barquera. Somos una institucion lider comprometida con la formacion integral, la innovacion pedagogica y los valores cristianos. Desde 1999, acompanamos a ninos y jovenes en su camino de aprendizaje y excelencia.</p>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Contáctenos</h3>
+                <div>
+                    <p class="footer-text">Lunes a viernes: <span class="time">7:30am - 1:30pm / 4:00pm - 6:00pm</span></p>
+                    <p class="footer-text">Sábado, domingo: <span class="time">Cerrado</span></p>
+                    <p class="footer-info"><i class="fal fa-envelope"></i>Correo: <a href="mailto:informes@colegiolabarquera.edu.pe">informes@colegiolabarquera.edu.pe</a></p>
+                    <p class="footer-info"><i class="fas fa-mobile-alt"></i>Teléfono: <a href="tel:+51972085699">972 085 699</a></p>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Últimas noticias</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-noticia1.html"><img src="../assets/images/blog/recent-post-1-1b.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <div class="recent-post-meta">
+                                <a href="javascript:void(0)" aria-disabled="true" onclick="return false;"><i class="far fa-calendar-alt"></i>13 de setiembre 2025</a>
+                            </div>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-noticia1.html">Excelencia que inspira</a></h4>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-noticia2.html"><img src="../assets/images/blog/recent-post-1-2b.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <div class="recent-post-meta">
+                                <a href="javascript:void(0)" aria-disabled="true" onclick="return false;"><i class="far fa-calendar-alt"></i>08 de setiembre 2025</a>
+                            </div>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-noticia2.html">Talento que trasciende</a></h4>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                                    <div class="media-img">
+                                        <a href="blog-noticia4.html"><img src="../assets/images/blog/recent-post-1-4a.jpg" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta">
+                                            <a href="javascript:void(0)" aria-disabled="true" onclick="return false;"><i class="far fa-calendar-alt"></i>22 de abril 2026</a>
+                                        </div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-noticia4.html">Dia mundial de la tierra</a></h4>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="Qué estás buscando">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+        Header Area
+    ==============================-->
+    <header class="vs-header header-layout3">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-links">
+                            <ul>
+                                <li><a href="javascript:void(0)" aria-disabled="true" onclick="return false;"><i class="far fa-user-circle"></i>Reservar Vacante</a></li>
+                                <li><a href="#" class="searchBoxTggler"><i class="far fa-search"></i>Buscar palabra</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto text-center">
+                        <div class="header-links style2">
+                            <ul>
+                                <li><i class="fas fa-envelope"></i>Correo: <a href="mailto:informes@colegiolabarquera.edu.pe">informes@colegiolabarquera.edu.pe</a></li>
+                                <li><i class="fas fa-mobile-alt"></i>Teléfono: <a href="tel:+51972085699">972 085 699</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrap">
+            <div class="sticky-active menu-area">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto col-lg text-center">
+                            <!-- Logo visible solo en móviles y tablets -->
+                            <a href="../index.html">
+                                <img src="../assets/images/logo1.png" alt="Logo Institucional" class="logo-tel">
+                            </a>
+                        <nav class="main-menu menu-style3 d-none d-lg-block">
+                            <ul>
+                                <li class="menu-logo-item">
+                                        <div class="header-logo">
+                                            <a href="../index.html">
+                                                <img src="../assets/images/logo.png" alt="logo">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="historia.html">Quiénes Somos</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="historia.html">Historia</a></li>
+                                            <li><a href="myv.html"class="no-transform">Misión y visión</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                    <a href="#">Propuesta Educativa</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="perfil.html">Perfil Estudiante Vicentino</a></li>
+                                        
+                                        <!-- NIVELES EDUCATIVOS con 3 subniveles -->
+                                        <li class="menu-item-has-children">
+                                        <a href="#">Niveles Educativos</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="inicial.html">Inicial</a></li>
+                                            <li><a href="primaria.html">Primaria</a></li>
+                                            <li><a href="secundaria.html">Secundaria</a></li>
+                                        </ul>
+                                        </li>
+                                        
+                                        <li><a href="departamento.html">Departamento Psicológico</a></li>
+                                    </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                    <a href="#">Vida Estudiantil</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children"><a href="#">Actividades</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="olimpiadas.html">Olimpiadas Vicentinas</a></li>
+                                                <li><a href="taller.html">Taller de Ajedrez</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#">Eventos</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="florales.html">Juegos Flores Vicentinos</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    
+                                    <li class="menu-item-has-children">
+                                    <a href="#">Admisión</a>
+                                    <ul class="sub-menu">
+                                        <!-- NIVELES EDUCATIVOS con 3 subniveles -->
+                                        <li>
+                                        <a href="javascript:void(0)" class="no-transform" aria-disabled="true" onclick="return false;">Costo e Inversión</a>
+                                        
+                                        </li>
+                                        <li><a href="javascript:void(0)" aria-disabled="true" onclick="return false;">Solicitar Vacante</a></li>
+                                <li><a href="documentos.html">Documentos</a></li>
+                                        
+                                    </ul>
+                                    </li>
+                                    <li>
+                                        <a href="descargas.html">Descargas</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contáctenos</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+                        </div>
+                        <div class="col-auto  d-none d-lg-block">
+                            <div class="header-icons">
+                                <button class="simple-icon style2 sideMenuToggler"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="platforms-menu menu-item-has-children">
+                            <a href="javascript:void(0)" class="vs-btn platforms-btn" aria-disabled="true">Plataformas</a>
+                            <ul class="sub-menu">
+                                <li><a href="plataformas-administrativos.html">Administrativos</a></li>
+                                <li><a href="plataformas-docentes.html">Docentes</a></li>
+                                <li><a href="plataformas-alumnos.html">Alumnos</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper ">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                    <ul class="breadcumb-menu">
+                        <li>DESCARGAS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    <!--==============================
+    Descargas Area
+    ==============================-->
+    <section class="vs-product-wrapper space-top space-extra-bottom descargas-wrap">
+        <div class="container">
+            <div class="title-area text-center">
+                <div class="sec-bubble">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                </div>
+                <h2 class="sec-title">Descargas Oficiales</h2>
+                <p class="descargas-note">Contenido adaptado de la pagina oficial de descargas para mantener en este sitio todos los recursos institucionales en un solo lugar.</p>
+            </div>
+
+            <div class="descargas-block">
+                <h3>Descargas Oficiales 2026</h3>
+                <div id="downloads2026" class="descargas-grid"></div>
+            </div>
+
+            <div class="descargas-block">
+                <h3>Manual de Marca 2024</h3>
+                <div id="downloadsManual" class="manual-viewer"></div>
+            </div>
+
+            <div class="descargas-block">
+                <h3>Logos y Vectores 2024</h3>
+                <div id="downloads2024" class="descargas-grid"></div>
+            </div>
+
+            <div class="descargas-block">
+                <h3>Paleta de Color</h3>
+                <div class="palette-grid">
+                    <div class="palette-item">
+                        <div class="palette-swatch" style="background:#0020ae;"></div>
+                        <div class="palette-body"><strong>#0020ae</strong><br>RGB(0, 32, 174)<br>CMYK(96, 92, 0, 0)</div>
+                    </div>
+                    <div class="palette-item">
+                        <div class="palette-swatch" style="background:#ffffff;"></div>
+                        <div class="palette-body"><strong>#ffffff</strong><br>RGB(255, 255, 255)<br>CMYK(0, 0, 0, 0)</div>
+                    </div>
+                    <div class="palette-item">
+                        <div class="palette-swatch" style="background:#eda300;"></div>
+                        <div class="palette-body"><strong>#eda300</strong><br>RGB(237, 163, 255)<br>CMYK(0, 47, 96, 0)</div>
+                    </div>
+                    <div class="palette-item">
+                        <div class="palette-swatch" style="background:#ffff00;"></div>
+                        <div class="palette-body"><strong>#ffff00</strong><br>RGB(255, 255, 0)<br>CMYK(14, 0, 94, 0)</div>
+                    </div>
+                    <div class="palette-item">
+                        <div class="palette-swatch" style="background:#551100;"></div>
+                        <div class="palette-body"><strong>#551100</strong><br>RGB(85, 17, 0)<br>CMYK(51, 100, 100, 42)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descargas-block">
+                <h3>Audios Oficiales</h3>
+                <div class="audio-grid">
+                    <article class="audio-card">
+                        <h4>Melodia</h4>
+                        <p>por Pelo D'Ambrosio | La Barquera</p>
+                        <audio controls preload="none">
+                            <source src="../assets/downloads/uploads/2020/04/svb-audio-oficial-1-melodia.mp3" type="audio/mpeg">
+                        </audio>
+                        <a class="download-btn" href="../assets/downloads/uploads/2020/04/svb-audio-oficial-1-melodia.mp3" target="_blank" rel="noopener"><i class="fas fa-download"></i> Descargar Melodia</a>
+                    </article>
+                    <article class="audio-card">
+                        <h4>Musica</h4>
+                        <p>por Pelo D'Ambrosio | La Barquera</p>
+                        <audio controls preload="none">
+                            <source src="../assets/downloads/uploads/2020/04/svb-audio-oficial-2-musica.mp3" type="audio/mpeg">
+                        </audio>
+                        <a class="download-btn" href="../assets/downloads/uploads/2020/04/svb-audio-oficial-2-musica.mp3" target="_blank" rel="noopener"><i class="fas fa-download"></i> Descargar Musica</a>
+                    </article>
+                    <article class="audio-card">
+                        <h4>Publicidad</h4>
+                        <p>por Pelo D'Ambrosio | La Barquera</p>
+                        <audio controls preload="none">
+                            <source src="../assets/downloads/uploads/2020/04/svb-audio-oficial-3-publicidad.mp3" type="audio/mpeg">
+                        </audio>
+                        <a class="download-btn" href="../assets/downloads/uploads/2020/04/svb-audio-oficial-3-publicidad.mp3" target="_blank" rel="noopener"><i class="fas fa-download"></i> Descargar Publicidad</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="imagePreviewModal" class="image-preview-modal" aria-hidden="true">
+        <div class="image-preview-dialog" role="dialog" aria-modal="true" aria-labelledby="imagePreviewTitle">
+            <div class="image-preview-header">
+                <h4 id="imagePreviewTitle" class="image-preview-title"></h4>
+                <button type="button" id="imagePreviewClose" class="image-preview-close" aria-label="Cerrar visor">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="image-preview-stage">
+                <img id="imagePreviewImg" src="" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="image-preview-actions">
+                <a id="imagePreviewDownload" class="download-btn" href="" download><i class="fas fa-download"></i> Descargar imagen</a>
+            </div>
+        </div>
+    </div><!--==============================
+            Footer Area
+    ==============================-->
+    <footer class="footer-wrapper footer-layout1 footer-has-video" data-bg-src="../assets/images/bg/footer-bg-1-1.png">
+        <video class="footer-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="../assets/videos/footer-bg.mp4" type="video/mp4">
+        </video>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gx-60 gy-4 text-center text-lg-start justify-content-between align-items-center">
+                    <div class="col-lg"><a href="../index.html"><img src="../assets/images/logo-2a.png" alt="logo"></a></div>
+                    <div class="col-lg-auto">
+                        <h3 class="h4 mb-0 text-white"><img src="../assets/images/icon/check-list.svg" alt="icon" class="me-2"> ¿Quieres ser parte de nuestra gran familia</h3>
+                    </div>
+                    <div class="col-lg-auto"><a href="javascript:void(0)" class="vs-btn" aria-disabled="true" onclick="return false;">Reserva tu vacante</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-center gx-60">
+                    <div class="col-lg-4">
+                        <div class="widget footer-widget">
+                            <div class="widget-about">
+                                <h3 class="mt-n2">Dándole a su hijo el mejor comienzo en la vida</h3>
+                                <p class="map-link"><img src="../assets/images/icon/map.svg" alt="svg">Jr. Crespo Castillo 854, Huánuco - Perú</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Contáctenos</h3>
+                            <div>
+                                <p class="footer-text">Lunes a viernes: <span class="time">7:30am - 1:30pm / 4:00pm - 6:00pm</span></p>
+                                <p class="footer-text">Sábado, domingo: <span class="time">Cerrado</span></p>
+                                <p class="footer-info"><i class="fal fa-envelope"></i>Correo: <a href="mailto:informes@colegiolabarquera.edu.pe">informes@colegiolabarquera.edu.pe</a></p>
+                                <p class="footer-info"><i class="fas fa-mobile-alt"></i>Teléfono: <a href="tel:+51972085699">972 085 699</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Nuestros servicio</h3>
+                            <div class="menu-all-pages-container footer-menu">
+                                <ul class="menu">
+                                    <li><a href="#">Excelencia académica<br>y formación integral.</a></li>
+                                    <li><a href="#">Valores cristianos que <br> fortalecen la fe y la convivencia.</a></li>
+                                    <li><a href="#">Disciplina, liderazgo<br> y sentido de pertenencia.</a></li>
+                                    <li><a href="#">Formación artística,<br> cultural y deportiva.</a></li>
+
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row flex-row-reverse gy-3 justify-content-between align-items-center">
+                    <div class="col-lg-auto">
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/798913569982837/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/colegiolabarquera"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@colegiolabarquera"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/@ColegioLaBarquera"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <p class="copyright-text ">Copyright &copy; 2026 <a href="../index.html">San Vicente de la Barquera</a>. Todos los derechos reservados por <a href="https://www.facebook.com/diego.pereztrinidad/">Ing. Diego Perez</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+        <!-- Botones flotantes -->
+    <a href="https://wa.me/51972085699text=%C2%A1Hola!%20Quisiera%20mas%20informacion%20sobre%20el%20Colegio%20Excelencia%20San%20Vicente%20de%20la%20Barquera." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Escribenos</span>
+    </a>
+    <button type="button" class="schoolbot-float" aria-label="Abrir asistente virtual">
+        <span class="schoolbot-avatar-wrap"><img class="schoolbot-avatar" src="/assets/images/chatbot_icon_256.png" loading="eager" decoding="sync" fetchpriority="high" alt="VicentinoBot"></span>
+        <span class="schoolbot-badge">Hola soy VicentinoBot</span>
+    </button>
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="../assets/js/slick.min.js"></script>
+<!-- jquery ui -->
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+
+    <script>
+        (function () {
+            var downloads2026 = [
+                { title: "Insignia 2023", url: "../assets/downloads/uploads/2026/04/Insignia-2023-scaled.png" },
+                { title: "Logotipo Cuadrado", url: "../assets/downloads/uploads/2026/04/Logotipo-Cuadrado.png" },
+                { title: "SVB Iniciales Logo", url: "../assets/downloads/uploads/2026/04/SVB-Iniciales-Logo.png" },
+                { title: "SVB Ecointegral 1", url: "../assets/downloads/uploads/2026/04/svb-eco-integral-1-scaled.png" },
+                { title: "Logotipo Horizontal", url: "../assets/downloads/uploads/2026/04/Logotipo-Horizontal.png" },
+                { title: "SVB Ecointegral 2", url: "../assets/downloads/uploads/2026/04/svb-eco-integral-2-scaled.png" },
+                { title: "Enfoque Sostenible", url: "../assets/downloads/uploads/2026/04/Ecointegral-1-Enfoque-Sostenible.png" },
+                { title: "Aprendizaje Experiencial", url: "../assets/downloads/uploads/2026/04/Ecointegral-2-Aprendizaje-Experiencial.png" },
+                { title: "Responsabilidad Ambiental", url: "../assets/downloads/uploads/2026/04/Ecointegral-3-Responsabilidad-Ambiental.png" },
+                { title: "Desarrollo Personal", url: "../assets/downloads/uploads/2026/04/Ecointegral-4-Desarrollo-Personal.png" },
+                { title: "Colaborativo y Participativo", url: "../assets/downloads/uploads/2026/04/Ecointegral-5-Colaborativo-y-Participativo.png" },
+                { title: "Cintas", url: "../assets/downloads/uploads/2026/04/Cintas-1-scaled.png" },
+                { title: "Perfil Cuadrado 1", url: "../assets/downloads/uploads/2026/04/svb-perfil-cuadrado-1.png" },
+                { title: "Perfil Cuadrado 2", url: "../assets/downloads/uploads/2026/04/svb-perfil-cuadrado-2.png" },
+                { title: "La Barquera Nina", url: "../assets/downloads/uploads/2026/04/svb-la-barquera-nina-scaled.png" },
+                { title: "La Barquera Nino", url: "../assets/downloads/uploads/2026/04/svb-la-barquera-nino-scaled.png" },
+                { title: "Inicial 3-4-5", url: "../assets/downloads/uploads/2026/04/Inicial-3-4-5.png" },
+                { title: "Primaria 1-2-3", url: "../assets/downloads/uploads/2026/04/Primaria-1-2-3.png" },
+                { title: "Primaria 4-5-6", url: "../assets/downloads/uploads/2026/04/Primaria-4-5-6.png" },
+                { title: "Secundaria 1-2-3", url: "../assets/downloads/uploads/2026/04/Secundaria-1-2-3.png" },
+                { title: "University 4-5", url: "../assets/downloads/uploads/2026/04/University-4-5.png" },
+                { title: "Medalla P1", url: "../assets/downloads/uploads/2026/04/svb-medalla-p1.png" },
+                { title: "Medalla P2", url: "../assets/downloads/uploads/2026/04/svb-medalla-p2.png" },
+                { title: "Medalla P3", url: "../assets/downloads/uploads/2026/04/svb-medalla-p3.png" },
+                { title: "Prof. Inicial", url: "../assets/downloads/uploads/2026/04/svb-prof-inicial-scaled.png" },
+                { title: "Prof. Primaria", url: "../assets/downloads/uploads/2026/04/svb-prof-primaria-scaled.png" },
+                { title: "Prof. Secundaria", url: "../assets/downloads/uploads/2026/04/svb-prof-secundaria-scaled.png" },
+                { title: "Talleres Futbol", url: "../assets/downloads/uploads/2024/03/svb-labarquera-academia-deportes-2024-futbol.png" },
+                { title: "Talleres Basquet", url: "../assets/downloads/uploads/2024/03/svb-labarquera-academia-deportes-2024-basquet.png" },
+                { title: "Talleres Voley", url: "../assets/downloads/uploads/2024/03/svb-labarquera-academia-deportes-2024-voley.png" },
+                { title: "Talleres Natacion", url: "../assets/downloads/uploads/2024/03/svb-labarquera-academia-deportes-2024-natacion.png" },
+                { title: "Talleres Atletismo", url: "../assets/downloads/uploads/2026/04/svb-talleres-atletismo.png" },
+                { title: "Talleres Gimnasia", url: "../assets/downloads/uploads/2026/04/svb-talleres-gimnasia.png" },
+                { title: "Heart Blue", url: "../assets/downloads/uploads/2026/04/svb-heart-blue_1f499.png" },
+                { title: "Heart White", url: "../assets/downloads/uploads/2026/04/svb-heart-white-_1f90d.png" },
+                { title: "Heart Yellow", url: "../assets/downloads/uploads/2026/04/svb-heart-yellow_1f49b.png" },
+                { title: "Heart Red", url: "../assets/downloads/uploads/2026/04/svb-heart-red_2764-fe0f.png" },
+                { title: "Ciencias Sociales", url: "../assets/downloads/uploads/2026/04/Ciencias-Sociales.png" },
+                { title: "Arte y Cultura", url: "../assets/downloads/uploads/2026/04/Arte-y-Cultura.png" },
+                { title: "Comunicacion", url: "../assets/downloads/uploads/2026/04/Comunicacion.png" },
+                { title: "CyT", url: "../assets/downloads/uploads/2026/04/CyT.png" },
+                { title: "DPCC", url: "../assets/downloads/uploads/2026/04/DPCC.png" },
+                { title: "Educacion Fisica", url: "../assets/downloads/uploads/2026/04/Educacion-Fisica.png" },
+                { title: "EPT", url: "../assets/downloads/uploads/2026/04/EPT.png" },
+                { title: "Ingles", url: "../assets/downloads/uploads/2026/04/Ingles.png" },
+                { title: "Matematicas", url: "../assets/downloads/uploads/2026/04/Matematicas.png" },
+                { title: "Personal Social", url: "../assets/downloads/uploads/2026/04/Personal-Social.png" },
+                { title: "Religion", url: "../assets/downloads/uploads/2026/04/Religion.png" },
+                { title: "Tutoria", url: "../assets/downloads/uploads/2026/04/Tutoria.png" }
+            ];
+
+            var downloads2024 = [
+                { title: "Logo", url: "../assets/downloads/uploads/2024/01/logo.png" },
+                { title: "Logo Blanco", url: "../assets/downloads/uploads/2024/01/logo-blanco_Mesa-de-trabajo-1-1.png" },
+                { title: "Logo Centrado 1", url: "../assets/downloads/uploads/2024/01/logo-colegio-centrado_Mesa-de-trabajo-1-1.png" },
+                { title: "Logo Centrado 2", url: "../assets/downloads/uploads/2024/01/logo-colegio-centrado_Mesa-de-trabajo-2.png" },
+                { title: "Logo Emblema", url: "../assets/downloads/uploads/2024/01/logo-emblema_Mesa-de-trabajo-1.png" },
+                { title: "Logo SVB Opcional", url: "../assets/downloads/uploads/2024/01/LOGO-SVB-OPCIONAL_Mesa-de-trabajo-1.png" },
+                { title: "Vector Ninos", url: "../assets/downloads/uploads/2024/01/VECTOR-NINOS_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nino 3.3", url: "../assets/downloads/uploads/2024/01/VECTOR-NINO-3.3_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nino 2.2", url: "../assets/downloads/uploads/2024/01/VECTOR-NINO-2.2_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nino 1", url: "../assets/downloads/uploads/2024/01/VECTOR-NINO-1_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nino 1.1", url: "../assets/downloads/uploads/2024/01/VECTOR-NINO-1.1_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nina 3.3", url: "../assets/downloads/uploads/2024/01/VECTOR-NINA-3.3_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nina 2.2", url: "../assets/downloads/uploads/2024/01/VECTOR-NINA-2.2_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nina 1", url: "../assets/downloads/uploads/2024/01/VECTOR-NINA-1_Mesa-de-trabajo-1.png" },
+                { title: "Vector Nina 1.1", url: "../assets/downloads/uploads/2024/01/VECTOR-NINA-1.1_Mesa-de-trabajo-1.png" }
+            ];
+
+            var manualPages = [];
+            for (var i = 1; i <= 37; i++) {
+                var n = String(i).padStart(2, "0");
+                manualPages.push({
+                    title: "Manual de Marca - Pagina " + n,
+                    url: "../assets/downloads/uploads/2024/01/MANUAL-DE-MARCA-REDUCIDO-_Pagina_" + n + ".png"
+                });
+            }
+
+            function renderManualViewer(targetId, items) {
+                var target = document.getElementById(targetId);
+                if (!target || !items || !items.length) return;
+
+                target.innerHTML =
+                    '<div class="manual-window">' +
+                        '<div class="manual-head">' +
+                            '<h4 id="manualCurrentTitle" class="manual-current-title"></h4>' +
+                            '<div class="manual-head-actions">' +
+                                '<span id="manualCounter" class="manual-counter"></span>' +
+                                '<a id="manualCurrentDownload" class="download-btn" href="" download><i class="fas fa-download"></i> Descargar pagina</a>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="manual-stage">' +
+                            '<button type="button" class="manual-nav prev" id="manualPrev" aria-label="Pagina anterior"><i class="fas fa-chevron-left"></i></button>' +
+                            '<img id="manualCurrentImage" src="" alt="" loading="lazy" decoding="async">' +
+                            '<button type="button" class="manual-nav next" id="manualNext" aria-label="Pagina siguiente"><i class="fas fa-chevron-right"></i></button>' +
+                        '</div>' +
+                    '</div>';
+
+                var currentImage = document.getElementById("manualCurrentImage");
+                var currentTitle = document.getElementById("manualCurrentTitle");
+                var currentDownload = document.getElementById("manualCurrentDownload");
+                var counter = document.getElementById("manualCounter");
+                var prevBtn = document.getElementById("manualPrev");
+                var nextBtn = document.getElementById("manualNext");
+                var activeIndex = 0;
+
+                function setActive(index) {
+                    if (index < 0) index = items.length - 1;
+                    if (index >= items.length) index = 0;
+                    activeIndex = index;
+                    var item = items[activeIndex];
+
+                    currentImage.src = item.url;
+                    currentImage.alt = item.title;
+                    currentTitle.textContent = item.title;
+                    currentDownload.href = item.url;
+                    currentDownload.setAttribute("download", item.title + ".png");
+                    counter.textContent = (activeIndex + 1) + " / " + items.length;
+                }
+
+                prevBtn.addEventListener("click", function () {
+                    setActive(activeIndex - 1);
+                });
+
+                nextBtn.addEventListener("click", function () {
+                    setActive(activeIndex + 1);
+                });
+
+                setActive(0);
+            }
+
+            function renderCards(targetId, items) {
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                target.innerHTML = items.map(function (item) {
+                    return (
+                        '<article class="download-card">' +
+                            '<button type="button" class="download-thumb preview-trigger" data-url="' + item.url + '" data-title="' + item.title + '" aria-label="Vista previa de ' + item.title + '">' +
+                                '<img src="' + item.url + '" alt="' + item.title + '" loading="lazy" decoding="async">' +
+                            '</button>' +
+                            '<div class="download-body">' +
+                                '<h4 class="download-title">' + item.title + '</h4>' +
+                                '<a class="download-btn" href="' + item.url + '" target="_blank" rel="noopener"><i class="fas fa-download"></i> Descargar</a>' +
+                            '</div>' +
+                        '</article>'
+                    );
+                }).join("");
+            }
+
+            function initImagePreviewModal() {
+                var modal = document.getElementById("imagePreviewModal");
+                var title = document.getElementById("imagePreviewTitle");
+                var image = document.getElementById("imagePreviewImg");
+                var download = document.getElementById("imagePreviewDownload");
+                var closeBtn = document.getElementById("imagePreviewClose");
+                if (!modal || !title || !image || !download || !closeBtn) return;
+
+                function openModal(url, imageTitle) {
+                    image.src = url;
+                    image.alt = imageTitle || "Vista previa";
+                    title.textContent = imageTitle || "Vista previa";
+                    download.href = url;
+                    download.setAttribute("download", (imageTitle || "imagen") + ".png");
+                    modal.classList.add("is-open");
+                    modal.setAttribute("aria-hidden", "false");
+                    document.body.style.overflow = "hidden";
+                }
+
+                function closeModal() {
+                    modal.classList.remove("is-open");
+                    modal.setAttribute("aria-hidden", "true");
+                    document.body.style.overflow = "";
+                }
+
+                document.addEventListener("click", function (event) {
+                    var trigger = event.target.closest(".preview-trigger");
+                    if (trigger) {
+                        openModal(trigger.getAttribute("data-url"), trigger.getAttribute("data-title"));
+                        return;
+                    }
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+
+                closeBtn.addEventListener("click", closeModal);
+
+                document.addEventListener("keydown", function (event) {
+                    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+                        closeModal();
+                    }
+                });
+            }
+
+            renderCards("downloads2026", downloads2026);
+            renderCards("downloads2024", downloads2024);
+            renderManualViewer("downloadsManual", manualPages);
+            initImagePreviewModal();
+        })();
+    </script>
+<!-- Main Js File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
