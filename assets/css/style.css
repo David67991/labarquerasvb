@@ -3319,7 +3319,7 @@ a.text-theme:hover,
 .header-layout3 .menu-area {
   max-width: 1360px;
   background-color: var(--vs-secondary-color);
-  margin: 0 auto -55px auto;
+  margin: 0 auto 0 auto;
   border-radius: 9999px;
 }
 
@@ -9862,7 +9862,7 @@ a .logo-tel {
   .header-layout3 .will-sticky .sticky-active {
     width: 100%;
     max-width: none;
-    margin: 0 auto -55px auto;
+    margin: 0 auto 0 auto;
     border-radius: 0;
     background-color: #001cb9;
   }
@@ -10017,6 +10017,31 @@ a .logo-tel {
 .vs-hero-carousel .ls-html-layer .vs-btn:hover:before,
 .vs-hero-carousel .ls-html-layer .vs-btn:hover:after {
   background-color: #fff967 !important;
+}
+
+/* Hero slides: full image visibility + subtle visual effect */
+.vs-hero-carousel .ls-slide {
+  background-color: #001cb9;
+}
+
+.vs-hero-carousel .ls-slide > .ls-bg {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.vs-hero-carousel .ls-slide .ls-bg-wrap,
+.vs-hero-carousel .ls-slide .ls-bg-outer {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Restore hero slider controller visibility (only image-menu section) */
