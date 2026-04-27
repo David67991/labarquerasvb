@@ -139,7 +139,7 @@
   function stickyMenu($targetMenu, $toggleClass, $parentClass) {
     if (!$targetMenu.length) return;
     var st = $(window).scrollTop();
-    var height = $targetMenu.outerHeight();
+    var height = $targetMenu.outerHeight(true);
     var $parent = $targetMenu.parent();
 
     if (height) {
