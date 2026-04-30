@@ -1,4 +1,4 @@
-﻿const http = require("http");
+const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
@@ -1435,7 +1435,6 @@ const SCHOOL_TERMS = [
   "vida",
   "estudiantil",
   "divimatica",
-  "florales",
   "leno",
   "banda",
   "cadetes",
@@ -1462,7 +1461,7 @@ function isSchoolQuestion(question) {
     return true;
   }
 
-  return /(colegio|san vicente|barquera|misericordia|admision|vacante|matricula|pension|inversion|costo|inicial|primaria|secundaria|reserva|contacto|huanuco|quienes somos|propuesta educativa|vida estudiantil|noticias|contactenos|divimatica|florales|leno|banda|cadetes|coro|olimpiadas|sacramentos|taller|departamento)/.test(
+  return /(colegio|san vicente|barquera|misericordia|admision|vacante|matricula|pension|inversion|costo|inicial|primaria|secundaria|reserva|contacto|huanuco|quienes somos|propuesta educativa|vida estudiantil|noticias|contactenos|divimatica|leno|banda|cadetes|coro|olimpiadas|sacramentos|taller|departamento)/.test(
     normalizedQuestion
   );
 }

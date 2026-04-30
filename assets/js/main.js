@@ -1,4 +1,4 @@
-﻿(function ($) {
+(function ($) {
   ("use strict");
   /*=================================
       JS Index Here
@@ -1709,7 +1709,6 @@
       "barquera",
       "huanuco",
       "divimatica",
-      "florales",
       "leno",
       "banda",
       "cadetes",
